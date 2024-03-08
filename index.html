@@ -159,10 +159,11 @@
         font-family: "gothamLightItalic";
       }
 
-      .formkit-submit {
+      #calendar {
         font-family: "bondoni";
         font-weight: bold;
         font-size: 20px;
+        font-family: "bondoni";
       }
 
       .formkit-submit span {
@@ -210,7 +211,7 @@
                 data-uid="b89e32c1f6"
                 data-format="inline"
                 data-version="5"
-                data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Thank you! Your response has been recorded.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":false,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+                data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":false,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
                 min-width="400 500 600 700 800"
               >
                 <div data-style="clean">
@@ -234,7 +235,7 @@
                           save_as="Tag"
                           group="field"
                         >
-                          <legend style="color: 110601c2; font-weight: 400">
+                          <legend style="color: #f6f1d7; font-weight: 400">
                             Let us know by filling out this form.
                           </legend>
                           <div
@@ -285,26 +286,10 @@
                     <div class="formkit-field">
                       <input
                         class="formkit-input"
-                        aria-label="First Name"
-                        name="fields[first_name]"
+                        aria-label="Name"
+                        name="fields[name]"
                         required=""
-                        placeholder="First Name"
-                        type="text"
-                        style="
-                          border-color: rgb(68, 68, 68);
-                          color: rgb(0, 0, 0);
-                          border-radius: 0px;
-                          font-weight: 400;
-                        "
-                      />
-                    </div>
-                    <div class="formkit-field">
-                      <input
-                        class="formkit-input"
-                        aria-label="Last Name"
-                        name="fields[dietary_restrictions]"
-                        required=""
-                        placeholder="Last Name"
+                        placeholder="Name"
                         type="text"
                         style="
                           border-color: rgb(68, 68, 68);
@@ -346,28 +331,44 @@
                         "
                       />
                     </div>
+                    <div class="formkit-field">
+                      <input
+                        class="formkit-input"
+                        aria-label="Dietary Restrictions"
+                        name="fields[dietary_restrictions]"
+                        required=""
+                        placeholder="Dietary Restrictions"
+                        type="text"
+                        style="
+                          border-color: rgb(68, 68, 68);
+                          color: rgb(0, 0, 0);
+                          border-radius: 0px;
+                          font-weight: 400;
+                        "
+                      />
+                    </div>
                     <a
                     href="./FineDining.ics"
                     download="FineDining.ics"
                     class="formkit-submit formkit-submit"
+                    id="calendar"
                     style="
                       background-color: #110601c2;
-                      color: rgb(246, 241, 215);
+                      color: #f6f1d7;
                       border-radius: 0px;
                       border: 1px solid white;
                       text-decoration: none;
                       padding: 12px 24px;
-
                     "
                   >
-                  Add to Calendar
+                    Add to Calendar
                   </a>
                     <button
                       data-element="submit"
                       class="formkit-submit formkit-submit"
                       style="
                         background-color: rgb(246, 241, 215);
-                        color: #110601c2;
+                        color: rgb(0, 0, 0);
                         border-radius: 0px;
                         font-weight: 400;
                       "
@@ -380,10 +381,10 @@
                       <span class="">Submit RSVP</span>
                     </button>
                     <span class="disclosure"
-                      >By submitting this form, you agree to receive future
-                      marketing communications from Spectrum Reach. You can
-                      unsubscribe at any time.</span
-                    >
+                    >By submitting this form, you agree to receive future
+                    marketing communications from Spectrum Reach. You can
+                    unsubscribe at any time.</span
+                  >
                   </div>
                 </div>
                 <style>
@@ -487,7 +488,7 @@
                   .formkit-form[data-uid="b89e32c1f6"] .formkit-submit {
                     border: 0;
                     border-radius: 5px;
-                    color: #110601c2;
+                    color: #ffffff;
                     cursor: pointer;
                     display: inline-block;
                     text-align: center;
@@ -685,7 +686,7 @@
                     label::before {
                     height: 16px;
                     width: 16px;
-                    border: 1px solid #cecece;
+                    border: 1px solid #e3e3e3;
                     background: #f6f1d7;
                     left: 0px;
                     top: 3px;
